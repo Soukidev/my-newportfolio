@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Mail, Menu, X } from 'lucide-react'
 import { useState } from "react"
-import Image from 'next/image'  // Import Image component
+
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,14 +13,7 @@ export default function NavBar() {
     <header className="sticky top-0 z-10 w-full border-b bg-background/95 backdrop-blur">
       <div className="container mx-auto flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center">
-          {/* Use Image component for logo 
-          <Image
-            src=""
-            alt="Soukayna Logo"
-            width={200} // Set width as per your logo size
-            height={80} // Set height as per your logo size
-            className="mr-2"  // Adds margin to the right of the logo
-          />*/}
+          
           <span className="font-bold text-xl"> My portfolio</span>
         </Link>
         <nav className="hidden md:flex gap-6">
